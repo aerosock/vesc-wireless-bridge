@@ -8,11 +8,11 @@
 // ==============================================================================
 
 // VESC Hardware UART (PH1.0 4-PIN Connector)
-// Pin 3: TXD (GPIO 43) -> Connected to Flipsky COMM RX
-// Pin 4: RXD (GPIO 44) -> Connected to Flipsky COMM TX
+// Pin 3: TXD (GPIO 43) -> Connects to VESC COMM RX
+// Pin 4: RXD (GPIO 44) -> Connects to VESC COMM TX
 #define VESC_UART_PORT        Serial0
-#define VESC_UART_RX_PIN      43
-#define VESC_UART_TX_PIN      44
+#define VESC_UART_TX_PIN      43  // TXD: Transmits commands to VESC COMM RX
+#define VESC_UART_RX_PIN      44  // RXD: Receives telemetry from VESC COMM TX
 #define VESC_UART_BAUDRATE    115200
 
 // LCD Backlight Pin (GPIO 6)
